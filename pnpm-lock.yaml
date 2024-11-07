@@ -4,10 +4,15 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+packageExtensionsChecksum: af7b2478116fc85d3b7d33cbdab88b5d
+
 importers:
 
   .:
     devDependencies:
+      '@rollup/rollup-darwin-arm64':
+        specifier: 4.24.4
+        version: 4.24.4
       typescript:
         specifier: ~5.6.2
         version: 5.6.3
@@ -168,6 +173,10 @@ packages:
   '@rollup/rollup-darwin-arm64@4.24.3':
     resolution: {integrity: sha512-QPW2YmkWLlvqmOa2OwrfqLJqkHm7kJCIMq9kOz40Zo9Ipi40kf9ONG5Sz76zszrmIZZ4hgRIkez69YnTHgEz1w==}
     cpu: [arm64]
+    os: [darwin]
+
+  '@rollup/rollup-darwin-arm64@4.24.4':
+    resolution: {integrity: sha512-GmU/QgGtBTeraKyldC7cDVVvAJEOr3dFLKneez/n7BvX57UdhOqDsVwzU7UOnYA7AAOt+Xb26lk79PldDHgMIQ==}
     os: [darwin]
 
   '@rollup/rollup-darwin-x64@4.24.3':
@@ -395,6 +404,8 @@ snapshots:
   '@rollup/rollup-darwin-arm64@4.24.3':
     optional: true
 
+  '@rollup/rollup-darwin-arm64@4.24.4': {}
+
   '@rollup/rollup-darwin-x64@4.24.3':
     optional: true
 
@@ -511,6 +522,7 @@ snapshots:
 
   vite@5.4.10:
     dependencies:
+      '@rollup/rollup-darwin-arm64': 4.24.4
       esbuild: 0.21.5
       postcss: 8.4.47
       rollup: 4.24.3
